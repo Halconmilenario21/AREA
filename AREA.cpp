@@ -1,8 +1,7 @@
 #include <iostream>
 #include "functions.h"
-// #include "getPI.h"
 using namespace std;
-int main() {
+void menu() {
 	while (true) {
 		char sel;
 		cout << "Calcular el area de una figura geometrica \n";
@@ -55,6 +54,8 @@ int main() {
 			cout << "Opcion no valida";
 		}
 	}
-
+}
+int main() {
+	menu();
 	return 0;
 }

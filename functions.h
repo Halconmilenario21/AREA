@@ -1,7 +1,6 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
-float pi = 3.1415;
+const float pi = 3.1415;
 int cuadrado() {
 	float LadoCuadrado;
 	cout << "Introduce la medida de cualquier lado del cuadrado: ";
