@@ -1,23 +1,69 @@
 #include <iostream>
 using namespace std;
 const float pi = 3.1415;
+float AreaCuadrado;
+float Perimetro;
+float LadoCuadrado;
+float alturarectangulo;
+float baserectangulo;
+float lado1;
 int cuadrado() {
-	float LadoCuadrado;
 	cout << "Introduce la medida de cualquier lado del cuadrado: ";
 	cin >> LadoCuadrado;
-	float AreaCuadrado = LadoCuadrado * LadoCuadrado;
+	AreaCuadrado = LadoCuadrado * LadoCuadrado;
 	cout << "El area del cuadrado es " << AreaCuadrado << "\n";
 	return 0;
 }
+int pcuadrado() {
+	cout << "introduce la medida de cualquier lado del cuadrado: ";
+	cin >> LadoCuadrado;
+	Perimetro = LadoCuadrado * 4;
+	cout << "El perímetro del cuadrado es de " << Perimetro;
+	return 0;
+}
+int ptriangulo() {
+	cout << "Escribe 'R' si es regular o 'I' si es irregular";
+	char respuesta;
+	cin >> respuesta;
+	if (respuesta == 'R') {
+		cout << "introduce la medida de cualquier lado del cuadrado: ";
+		cin >> Lado1;
+		Perimetro = lado1 * 3;
+		cout << "El perímetro del cuadrado es de " << Perimetro;
+	}
+	else if(respuesta == 'I') {
+		float lado2;
+		float lado3;
+		cout << "introduce la medida del primer lado del triangulo: ";
+		cin >> lado1;
+		cout << "introduce la medida del segundo lado del triangulo: ";
+		cin >> lado2;
+		cout << "introduce la medida del ultimo lado del cuadrado: ";
+		cin >> lado3;
+		Perimetro = lado1 + lado2 + lado3;
+		cout << "El perimetro del triangulo es de " << Perimetro;
+	}
+	else {
+		cout << "Opcion no valida";
+	}
+	return 0;
+}
 int rectangulo() {
-	float baserectangulo;
 	cout << "Intruduce la medida de la base del rectangulo: ";
 	cin >> baserectangulo;
-	float alturarectangulo;
 	cout << "Introduce la medida de altura del rectangulo: ";
 	cin >> alturarectangulo;
-	float arearectangulo = baserectangulo * alturarectangulo / 2;
+	float arearectangulo = baserectangulo * alturarectangulo;
 	cout << "El area del rectangulo es de " << arearectangulo << "\n";
+	return 0;
+}
+int prectangulo() {
+	cout << "Intruduce la medida de la base del rectangulo: ";
+	cin >> baserectangulo;
+	cout << "Introduce la medida de altura del rectangulo: ";
+	cin >> alturarectangulo;
+	Perimetro = baserectangulo * 2 + alturarectangulo * 2;
+	cout << "El perimetro del rectangulo es de " << arearectangulo << "\n";
 	return 0;
 }
 int triangulo() {
